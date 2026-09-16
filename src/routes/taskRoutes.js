@@ -1,5 +1,5 @@
-import express from "express";
-import { getTasks, getTaskById, createTask, updateTask, deleteTask } from "../controllers/TaskController.js";
+const express = require("express");
+const { getTasks, getTaskById, createTask, updateTask, deleteTask } = require("../controllers/TaskController");
 
 const router = express.Router();
 
@@ -9,4 +9,4 @@ router.post("/", createTask);
 router.put("/:id", updateTask);
 router.delete("/:id", deleteTask);
 
-export default router;
+module.exports = router;

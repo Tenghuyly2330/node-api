@@ -9,7 +9,7 @@
     "test": "jest --runInBand"
   },
   "keywords": [],
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
