@@ -1,4 +1,4 @@
-name: CI pipeline
+name: Node API CI/CD
 
 on:
       push:
