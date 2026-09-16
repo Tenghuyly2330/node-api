@@ -24,3 +24,13 @@ jobs:
                     run: npm ci
                   - name: Run tests
                     run: npm test
+
+      docker-build:
+            needs: build
+            runs-on: ubuntu-latest
+
+            steps:
+                  - name: Checkout source code
+                    uses: actions/checkout@v5
+                  - name: build docker image
+                    run: docker build -t node-api:latest .
