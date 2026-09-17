@@ -9,6 +9,7 @@ app.get("/health", (req, res) => {
   res.status(200).json({
     status: "UP",
     message: "Node.js API is running",
+    timestamp: new Date().toISOString(),
   });
 });
 
